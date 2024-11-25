@@ -1,0 +1,55 @@
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  #cv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    max-height: 1080px;
+  }
+  .section {
+    width: 48%;
+  }
+  #skin {
+    order: 1;
+  }
+  #language {
+    order: 2;
+  }
+  #activity {
+    order: 3;
+  }
+  #education {
+    order: 4;
+  }
+  #hobby {
+    order: 5;
+  }
+  #cert {
+    padding: 30px 40px;
+  }
+  .cert1 img {
+    width: 100%;
+  }
+  .num3 img {
+    width: 50%;
+  }
+  .section-content-2 {
+    grid-template-columns: repeat(3, 32%);
+  }
+  table {
+    width: 100%;
+    height: 223px;
+  }
+  #proj img {
+    width: 100%;
+  }
+  #proj {
+    width: 100%;
+  }
+  .icon-lamp {
+    display: block;
+    text-align: center;
+    padding-left: 4px;
+    margin-top: 4px;
+  }
+}

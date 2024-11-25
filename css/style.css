@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.4 !important;
+}
+body {
+  width: 1200px;
+  margin: 0 auto !important;
+  font-family: sans-serif !important;
+  color: #444 !important;
+  font-size: 11px !important;
+}
+h2 {
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+}
+p {
+  margin-bottom: 0 !important;
+  margin-top: 8px !important;
+}
+/* PHẦN ẢNH ĐẦU TRANG */
+.img-banner {
+  filter: brightness(45%);
+}
+.container-img {
+  position: relative;
+}
+.name {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -23%);
+  color: rgb(255, 255, 255, 0.8);
+}
+.name-1 {
+  font-size: 28px !important;
+  margin: 0 !important;
+}
+.note {
+  font-size: 10px;
+  color: rgb(240, 248, 255, 0.6);
+}
+/* PHẦN NAVBAR */
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: center !important;
+  align-items: center;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+}
+nav a::before {
+  color: rgb(5, 151, 184);
+}
+.navbar h2 {
+  margin: 0;
+}
+.hdr {
+  flex-basis: 240px;
+  border-left: 1px solid rgba(196, 199, 201, 0.6);
+}
+.icon {
+  flex-basis: 100px;
+  font-size: 9px;
+  padding: 13px 0;
+  border-left: 1px solid rgba(196, 199, 201, 0.6);
+}
+.icon-1 {
+  border-right: 1px solid rgba(196, 199, 201, 0.6);
+}
+.note-1 {
+  font-size: 8px;
+  color: rgb(180, 178, 178);
+}
+/* PHẦN THÔNG TIN */
+#info {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  background-color: rgb(238, 255, 255);
+}
+#info-1 {
+  background-color: rgb(228, 255, 255);
+  padding: 40px 40px;
+}
+#target {
+  padding: 40px 40px;
+}
+/* PHẦN LÝ LỊCH */
+#cv {
+  /* background-color: aquamarine; */
+  margin: 0 auto;
+  width: 68%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 550px 300px; */
+  column-gap: 25px;
+  row-gap: 35px;
+  margin-top: 25px;
+}
+.section {
+  display: grid;
+  grid-template-columns: 75% 1fr;
+  grid-template-rows: 80px 1fr;
+  justify-items: start;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid rgba(196, 199, 201, 0.6);
+}
+.section-content {
+  grid-column: 1/-1;
+  align-self: start;
+}
+.ic {
+  font-size: 25px;
+}
+ul {
+  padding-left: 15px !important;
+}
+li {
+  padding-left: 5px;
+  margin-bottom: 40px;
+}
+article li::marker {
+  font-size: 15px;
+  color: rgb(5, 151, 184);
+}
+/* bố cục cho phần 'hiện tại' */
+.now {
+  color: white;
+  background-color: rgb(5, 151, 184);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+/* layouts cho sở thích */
+.hobby-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 15px;
+}
+.ic-1 {
+  position: relative;
+  /* tạo khung và viền cho phần tử */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(5, 151, 184);
+  color: rgb(5, 151, 184);
+}
+.ic-1::before {
+  font-size: 20px;
+  /* đặt vị trí cho icon và căn giữa */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* tạo dấu gạch dưới cho phần ngôn ngữ và kĩ năng */
+.underline {
+  padding-top: 5px;
+  width: 140px; /* Tổng chiều rộng của phần tử giả */
+  display: flex;
+  justify-content: space-between;
+}
+.un {
+  height: 4px; /* Độ dày của mỗi đoạn gạch */
+  border-radius: 5px; /* Bo tròn viền */
+}
+.un-1 {
+  background-color: #00adf1; /* Đoạn gạch đầu tiên màu xanh */
+  width: 45px; /* Chiều rộng đoạn gạch */
+}
+.un-2 {
+  background-color: #d3d3d3; /* Đoạn gạch màu ghi */
+  width: 45px; /* Chiều rộng đoạn gạch */
+}
+/* layouts cho chứng chỉ */
+#cert {
+  background-color: rgb(238, 255, 255);
+  padding: 30px 200px;
+  margin-top: 20px;
+}
+.section-content-1 {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+}
+.cert1 {
+  display: flex;
+  gap: 20px;
+}
+.num3 {
+  grid-column: 1/-1;
+  padding-top: 30px;
+  border-top: 1.5px solid #d6c08d;
+}
+.num2 {
+  padding-left: 15px;
+  border-left: 1.5px solid #d6c08d;
+}
+/* layouts cho dự án */
+#proj {
+  width: 68%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.section-content-2 {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 255px);
+  justify-content: space-between;
+}
+/* căn chỉnh table trong dự án */
+table {
+  width: 255px;
+  border-collapse: collapse; /* Gộp các đường viền lại */
+}
+tr {
+  height: 50px; /*kích thước của 1 hàng trong table*/
+  box-sizing: content-box;
+  border: 1px solid #ddd !important; /* Đường viền của ô */
+}
+tr:first-child {
+  height: 94px;
+}
+td {
+  padding: 8px; /* Khoảng cách giữa nội dung và viền */
+  text-align: left; /* Căn lề nội dung về bên trái */
+  vertical-align: top; /* căn nội dung lên trên theo chiều dọc */
+}
+table tr td:first-child {
+  width: 71px;
+}
+/* căn chỉnh phụ đề */
+.proj-1 {
+  padding: 10px 10px;
+  border: 1px solid #ddd;
+}
+.year {
+  color: white;
+  background-color: rgb(5, 151, 184);
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+.proj-ic {
+  margin-right: 15px;
+}
+.proj-ic::before {
+  padding-right: 5px;
+}
+/* căn chỉnh phần liên hệ  */
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgb(238, 255, 255);
+}
+.ft-ic::before {
+  color: rgb(5, 151, 184);
+  padding-right: 5px;
+  font-size: 20px;
+}
+.ft-ic {
+  padding-right: 30px;
+}
+/* căn chỉnh ảnh cá nhân phần mở rộng. 
+ảnh cá nhân xấu nên em ko đưa vào trong bài làm*/
+.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+/* ẩn thông tin nghề nghiệp */
+
+.view-btn {
+  background-color: #e6d9ab;
+  border: 0;
+  border-radius: 10px;
+  padding: 4px 11px;
+  position: absolute;
+  top: 65px;
+  left: 20px;
+  display: none;
+}
+.section {
+  position: relative;
+}
+.section:hover .view-btn {
+  display: block;
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+}
+.active {
+  max-height: 100%;
+}
+
+a:link {
+  text-decoration: none !important;
+}

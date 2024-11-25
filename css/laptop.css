@@ -1,0 +1,6 @@
+@media only screen and (min-width: 992px) {
+  .custom-container {
+    max-width: 1200px !important;
+    width: 1200px !important;
+  }
+}
